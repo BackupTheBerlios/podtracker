@@ -1,0 +1,7 @@
+php_flag allow_call_time_pass_reference on
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^feed/(.+)$ go.php?feed=$1
+RewriteRule ^player/(.+)$ go.php?player=$1
+RewriteRule ^web/(.+)$ go.php?web=$1
+RewriteRule ^rss/(.+)$ go.php?rss=$1
